@@ -1,7 +1,7 @@
 # sum-of-sales-0f8eda17
 
 ## Overview
-Publish a single-page site that fetches data.csv from attachments, sums its sales column, sets the title to "Sales Summary 0f8eda17", displays the total inside #total-sales, and loads Bootstrap 5 from jsdelivr.
+Add a Bootstrap table with id='product-sales' that lists each product with its total sales. The table must have a tbody with rows showing product names and sales amounts. Keep #total-sales accurate displaying 2292.94.
 
 ## Setup
 1. Clone this repository
@@ -9,9 +9,11 @@ Publish a single-page site that fetches data.csv from attachments, sums its sale
 3. Or visit the GitHub Pages URL
 
 ## Features
-- Page title is 'Sales Summary 0f8eda17'
-- Page loads Bootstrap 5 from CDN (link[href*='bootstrap'])
-- Element #total-sales displays 2292.94 (within 0.01 tolerance)
+- Table #product-sales exists
+- Table has tbody element
+- Table has at least 1 row in tbody (document.querySelectorAll('#product-sales tbody tr').length >= 1)
+- Sum of all sales in table equals 2292.94
+- #total-sales still displays 2292.94
 
 ## License
 MIT License
